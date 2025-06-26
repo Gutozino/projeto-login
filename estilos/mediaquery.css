@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+:root{ /* Paleta de cores */
+    --Rosa-escuro1: #F23D5E;
+    --Rosa-claro2: #F27E93;
+    --Azul: #80D2F2;
+    --Rosa-mais-claro: #F2A7A7;
+}
+
+@media screen and (min-width: 922px) and (max-width: 1200px) { /* Para desktop*/
+    body{
+     font-family: Arial, Helvetica, sans-serif; 
+     background-image: linear-gradient(to right, #F2A7A7, #F27E93);  
+    }
+
+    main{
+        background-image: linear-gradient(to right, #F2A7A7, #F27E93);
+        width: 100%;
+        height: 100vh;
+    }
+
+    section#login{
+        width: 800px;
+        margin: auto;
+        background-color: white;
+        overflow: hidden;
+        height: 350px; /* ou defina uma altura fixa se preferir */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+            
+  }
+
+  
+article#formulario, article#imagem {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+    
+    article#imagem{
+        width: 50%;
+        height: 100%;
+        background-image: url(../imagens/sakura.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        float: right;
+   
+}
+   
+    article#formulario{
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .campo{
+        background-image: var(--Azul);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    #formulario i.material-icons {
+  float: left;
+  width: 70px;
+  height: 40px;
+  background-color: var(--Rosa-claro2);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 4px;
+}
+}
+
