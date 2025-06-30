@@ -25,7 +25,7 @@ main{
 }
 
 section#login{
-   width: 300px;
+   width: 350px;
    height: 500px;
    position: absolute;
    top: 50%;
@@ -81,9 +81,9 @@ article#formulario p{
 #formulario input[type="email"],
 #formulario input[type="password"] {
    float: left;
-  width: 250px;
+  width: 285px;
   height: 40px;
-  border: none;
+  border: none; 
   background-color: var(--Azul);
   padding-left: 10px;
   font-size: 14px;
